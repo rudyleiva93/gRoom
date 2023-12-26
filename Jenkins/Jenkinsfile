@@ -1,0 +1,5 @@
+import com.groom.jenkins.*
+
+Pipeline pipeline = new Pipeline()
+
+pipeline.GroomPipeline()
