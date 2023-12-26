@@ -1,4 +1,4 @@
-import com.groom.jenkins.*
+import src.com.groom.jenkins.*
 
 Pipeline pipeline = new Pipeline()
 
