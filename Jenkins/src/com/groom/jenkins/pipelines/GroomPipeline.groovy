@@ -1,6 +1,6 @@
 package com.groom.jenkins.pipelines
 
-def groomPipeline() {
+def build() {
     pipeline {
         options {
             checkoutToSubdirectory('groom')
