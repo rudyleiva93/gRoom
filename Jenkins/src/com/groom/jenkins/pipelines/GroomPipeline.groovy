@@ -1,10 +1,10 @@
 package com.groom.jenkins.pipelines
 
 def build() {
-    //node {
+    node {
         pipeline {
             checkoutToSubdirectory('groom')
-            timestamps()
+            //timestamps()
             stages('Build gRoom Application') {
                 stage('Parallel Build') {
                     parallel {
@@ -22,5 +22,5 @@ def build() {
                 }
             }
         }
-    //}
+    }
 }
