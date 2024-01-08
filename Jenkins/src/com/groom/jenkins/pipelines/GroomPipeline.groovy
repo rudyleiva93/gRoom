@@ -1,7 +1,7 @@
 package com.groom.jenkins.pipelines
 
 def build() {
-    node {
+    //node {
         pipeline {
             checkoutToSubdirectory('groom')
             timestamps()
@@ -22,5 +22,5 @@ def build() {
                 }
             }
         }
-    }
+    //}
 }
