@@ -6,3 +6,5 @@ def groomPipeline() {
     GroomPipeline pipeline = new GroomPipeline()
     pipeline.build()
 }
+
+return this;

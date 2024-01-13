@@ -24,3 +24,5 @@ def build() {
         }
     }
 }
+
+return this;
