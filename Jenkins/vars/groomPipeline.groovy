@@ -1,5 +1,6 @@
 def call() {
     pipeline {
+        agent any
         options {
             checkoutToSubdirectory('groom')
             timestamps()
