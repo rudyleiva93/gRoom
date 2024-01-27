@@ -11,14 +11,14 @@ def call() {
                     stage('Build gRoom Server') {
                         steps {
                             dir('groom\\groomserver') {
-                                bat '"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\MSBuild.exe" groomserver.sln -t:Build'
+                                bat '"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\MSBuild.exe" groomserver.sln -restore -t:Build'
                             }
                         }
                     }
                     stage('Build gRoom Client') {
                         steps {
                             dir('groom\\groomclient') {
-                                bat '"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\MSBuild.exe" groomclient.sln -t:Build'
+                                bat '"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\MSBuild.exe" groomclient.sln -restore -t:Build'
                             }
                         }
                     }
