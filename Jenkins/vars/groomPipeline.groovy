@@ -1,6 +1,4 @@
-package com.groom.jenkins.pipelines
-
-def build() {
+def call() {
     pipeline {
         options {
             checkoutToSubdirectory('groom')

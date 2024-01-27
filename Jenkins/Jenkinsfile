@@ -1,6 +1,3 @@
-@Library('groom')
-import com.groom.jenkins.*
+@Library('groom') _
 
-Pipeline pipeline = new Pipeline()
-
-pipeline.groomPipeline()
+groomPipeline()
