@@ -10,14 +10,14 @@ def call() {
                 parallel {
                     stage('Build gRoom Server') {
                         steps {
-                            dir('groomserver') {
+                            dir('groom\\groomserver') {
                                 bat '"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\MSBuild.exe" groomserver.sln -t:Build'
                             }
                         }
                     }
                     stage('Build gRoom Client') {
                         steps {
-                            dir('groomclient') {
+                            dir('groom\\groomclient') {
                                 bat '"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\MSBuild.exe" groomclient.sln -t:Build'
                             }
                         }
