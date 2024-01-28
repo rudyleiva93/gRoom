@@ -1,6 +1,6 @@
 def call() {
     pipeline {
-        agent {label 'Docker-Cloud'}
+        agent {label 'container'}
         options {
             checkoutToSubdirectory('groom')
             timestamps()
