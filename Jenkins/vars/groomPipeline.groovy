@@ -1,6 +1,6 @@
 def call() {
     pipeline {
-        agent {label 'container'}
+        agent {label 'build'}
         options {
             checkoutToSubdirectory('groom')
             timestamps()
