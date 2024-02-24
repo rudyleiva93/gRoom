@@ -1,6 +1,10 @@
 def call() {
     pipeline {
-        agent {label 'build'}
+        agent {
+            docker {
+                image "jenkins/agent:jdk11-nanoserver-1809"
+            }
+        }
         options {
             checkoutToSubdirectory('groom')
             timestamps()
